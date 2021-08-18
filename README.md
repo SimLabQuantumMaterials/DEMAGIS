@@ -1,6 +1,6 @@
 # DEMAGIS: a DEnse MAtrix Generator with gIve Spectrum
 
-**DEMAGIS** provides a dense matrix generator which is able to generate large-scale symmetric (Hermitian) matrices with given spectral distributions. The objective of DEMAGIS is to provide large-scale test suite for the benchmark and evaluation of spectrum-based iterative eigensolvers.
+**DEMAGIS** provides a dense matrix generator which is able to generate symmetric (Hermitian) matrices with given spectral distributions in parallel. The objective of DEMAGIS is to provide large-scale test suite for the benchmark and evaluation of spectrum-based iterative eigensolvers.
 
 **DEMAGIS** is written in C++, which has two building options: 
 
