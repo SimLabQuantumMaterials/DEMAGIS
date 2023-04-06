@@ -1,4 +1,5 @@
 #pragma once
+#include <complex>
 
 template <class Q>
 struct Base_Class {

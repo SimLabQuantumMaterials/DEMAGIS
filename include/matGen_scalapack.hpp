@@ -96,7 +96,7 @@ T* matGen_scalapack(int ctxt, std::size_t N, std::size_t mbsize, std::size_t nbs
         c += numroc( &N, &nbsize, &j, &icsrc, &dim1 );
         g_offs_c.push_back(c);
     }
-
+/*
     int cnt = 0;
     for(auto j = 0; j < N; j++){
         for(auto i = 0; i < N; i++){
@@ -107,7 +107,13 @@ T* matGen_scalapack(int ctxt, std::size_t N, std::size_t mbsize, std::size_t nbs
             }
         }
     }  
+*/
 
+    for(auto i = 0; i < N_loc_r; i++){
+        for(auto j = 0; j < N_loc_c; j++){
+                M_loc[j * N_loc_c + i] = distribution(generator);
+        }
+    }
 
     //QR factorization of M
     std::vector<T> tau(std::min(N_loc_r, N_loc_c));
